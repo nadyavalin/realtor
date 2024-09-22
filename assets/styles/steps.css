@@ -1,5 +1,26 @@
 .steps {
   width: 100%;
   background-color: var(--bg-color);
-  height: 500px;
+  padding-top: 20px;
+}
+
+.steps ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.steps ul li {
+  padding: 15px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 80px;
+  background-color: var(--accent-button-color);
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media (hover: hover) {
+  .steps ul li:hover {
+    background-color: var(--accent-color);
+  }
 }

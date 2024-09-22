@@ -1,17 +1,20 @@
 body {
   --bg-color: rgb(255, 255, 249, 0.9);
+  --bg-color-transparent: rgb(255, 255, 249, 0.9);
   --main-color: #2a2a2a;
-  --white-color: #ffffff;
+  --white-color: #fffff9;
+  --white-form-color: #f9f9f9;
   --accent-color: #00baa4;
   --accent-button-color: #b4dad6;
-  --gradient: linear-gradient(rgba(136, 135, 135, 0.2), rgba(255, 255, 255, 0));
+  --gradient: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+
 
   color: var(--main-color);
   background-color: var(--bg-color);
   background-image: url(../img/fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+
 
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -47,6 +50,13 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 700;
+  margin: 20px 5px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 5px;
 }
 
 p {

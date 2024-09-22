@@ -3,7 +3,6 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 100px;
-  margin: 0 40px;
 }
 
 .offer__img {
@@ -19,7 +18,6 @@
 }
 
 .offer__content {
-  margin-top: 70px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -56,20 +54,16 @@
   border-radius: 20px;
   padding: 10px;
   text-align: center;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .experience__figure {
   font-size: 30px;
 }
 
-@keyframes slide-in {
-  0% {
-    left: -100%;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
+@media (hover: hover) {
+  .experience__block:hover {
+    background-color: var(--accent-color);
   }
 }
 
@@ -87,5 +81,16 @@
 @media only screen and (max-width: 800px) {
   .offer__content h1 span {
     color: var(--main-color);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
   }
 }

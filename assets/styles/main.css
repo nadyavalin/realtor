@@ -1,3 +1,9 @@
 main {
   height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 0 80px;
 }

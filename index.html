@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./assets/styles/icons.css">
   <link rel="stylesheet" href="./assets/styles/offer.css">
   <link rel="stylesheet" href="./assets/styles/steps.css">
+  <link rel="stylesheet" href="./assets/styles/prices.css">
+  <link rel="stylesheet" href="./assets/styles/request.css">
   <title>Дмитрий Шарук - Ваш риелтор</title>
 </head>
 
@@ -33,7 +35,7 @@
         </ul>
       </nav>
       <section class="phone">
-        <h3><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></h3>
+        <h2><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></h2>
         <p>на связи 24/7</p>
       </section>
     </div>
@@ -84,15 +86,179 @@
         </div>
       </div>
     </section>
-    <section class="steps"></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="steps">
+      <h3>Этапы сделки и её сопровождение</h3>
+      <ul>
+        <li>Бесплатная консультация</li>
+        <li>Анализ и оценка</li>
+        <li>Поиск объекта или клиента</li>
+        <li>Юридическая проверка</li>
+        <li>Заключение договора</li>
+        <li>Безопасные расчёты</li>
+        <li>Полный расчёт по услуге</li>
+      </ul>
+    </section>
+    <section class="examples">
+      <h3>Примеры работ</h3>
+    </section>
+    <section class="price">
+      <div class="price__title">
+        <h3>Прайс-лист</h3>
+        <a href="#" class="button button_accent">Оставить заявку</a>
+      </div>
+      <div class="price__items">
+
+        <div class="price__item">
+          <h4>Покупка</h4>
+          <ul>
+            <li>
+              <p>Стоимость услуги при покупке новостройки</p>
+              <div>
+                <p class="price__interest">от 0 до 1 %</p>
+                <p class="price__note">при покупке объекта у застройщика партнера</p>
+              </div>
+            </li>
+            <li>
+              <p>Стоимость услуги при покупке вторичного жилья</p>
+              <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Покупка квартиры по жилищному сертификату или субсидии</p>
+              <p class="price__interest">не более 3% от 150 000 Ꝑ</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price__item">
+          <h4>Продажа</h4>
+          <ul>
+            <li>
+              <p>Стоимость услуги при продаже объекта</p>
+              <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Стоимость услуги при срочной продаже</p>
+              <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price__item">
+          <h4>Другие ситуации</h4>
+          <ul>
+            <li>
+              <p>Альтернативная сделка, обмен квартир</p>
+              <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Международные сделки: покупка / продажа объектов заграницей</p>
+              <p class="price__interest">от 150 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Управление объектами, сдача в найм, ведение объекта</p>
+              <p class="price__interest">от 50 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Расселение коммунальных квартир</p>
+              <p class="price__interest">от 5% от 200 000 Ꝑ</p>
+            </li>
+            <li>
+              <p>Сдача в аренду, поиск объекта в аренду</p>
+              <p class="price__interest">от 50% от суммы арендного платежа</p>
+            </li>
+            <li>
+              <p>Сопровождение сделок с недвижимостью</p>
+              <div>
+                <p class="price__interest">от 50 000 Ꝑ</p>
+                <p class="price__note">контроль безопасности сделки и юридической чистоты</p>
+              </div>
+            </li>
+            <li>
+              <p class="price__final">Все цены указаны ориентировочно, конечная стоимость услуги обсуждается
+                индивидуально</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <section class="request-form">
+      <h3 class="request__title">Оставить заявку</h3>
+      <form>
+        <div>
+          <label for="name">Имя:</label>
+          <input id="name" type="text" name="name" required />
+        </div>
+
+        <div>
+          <label for="phone">Телефон:</label>
+          <input id="phone" type="tel" name="phone" required />
+        </div>
+
+        <div>
+          <label for="select">Тип покупки:</label>
+          <select id="select" name="select" required>
+            <option value="Покупка новостройки" selected>Покупка новостройки</option>
+            <option value="Покупка вторичного жилья">Покупка вторичного жилья</option>
+            <option value="Покупка квартиры по жилищному сертификату или субсидии">Покупка квартиры по жилищному
+              сертификату или субсидии</option>
+            <option value="Продажа объекта">Продажа объекта</option>
+            <option value="Срочная продажа">Срочная продажа</option>
+            <option value="Альтернативная сделка, обмен квартир">Альтернативная сделка, обмен квартир</option>
+            <option value="Покупка объекта заграницей">Покупка объекта заграницей</option>
+            <option value="Продажа объекта заграницей">Продажа объекта заграницей</option>
+            <option value="Управление объектами, сдача в найм, ведение объекта">Управление объектами, сдача в найм,
+              ведение объекта</option>
+            <option value="Расселение коммунальных квартир">Расселение коммунальных квартир</option>
+            <option value="Сдача в аренду">Сдача в аренду</option>
+            <option value="Поиск объекта в аренду">Поиск объекта в аренду</option>
+            <option value="Сопровождение сделок с недвижимостью">Сопровождение сделок с недвижимостью</option>
+            <option value="Другое...">Другое...</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="situation">Описать ситуацию:</label>
+          <textarea id="situation" name="situation" rows="7" required></textarea>
+        </div>
+
+        <div>
+          <label for="agreement" class="form__agreement">
+            <input id="agreement" type="checkbox" name="agreement" required />Даю согласие на обработку своих
+            персональных данных, соглашаюсь с политикой конфиденциальности и
+            договором оферты
+          </label>
+        </div>
+
+        <div>
+          <input type="submit" value="Отправить" />
+        </div>
+      </form>
+    </section>
+    <section class="banks">
+      <h3>Ведущие банки-партнеры</h3>
+      <div>
+        <ul>
+          <li class="bank"><img src="./assets/img/banks/sber.png" alt="Сбер"></li>
+          <li class="bank"><img src="./assets/img/banks/vtb.png" alt="ВТБ"></li>
+          <li class="bank"><img src="./assets/img/banks/raif.png" alt="Райффайзен Банк"></li>
+          <li class="bank"><img src="./assets/img/banks/ontkr.png" alt=""></li>
+          <li class="bank"><img src="./assets/img/banks/rosbank.png" alt=""></li>
+          <li class="bank"><img src="./assets/img/banks/domrf.png" alt=""></li>
+          <li class="bank"><img src="./assets/img/banks/gazprombank.jpeg" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <section class="">
+      <h3>Отзывы</h3>
+    </section>
+    <section class="about">
+      <h3>О себе</h3>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+
+  </footer>
   <script src="./assets/scripts/stickyHeader.js"></script>
 </body>
 

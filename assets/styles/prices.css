@@ -1,0 +1,50 @@
+.price__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__items ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price__items ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  background-color: var(--bg-color-transparent);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.price__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price__items ul li div {
+  text-align: end;
+}
+
+.price__interest {
+  font-weight: 800;
+}
+
+.price__note {
+  font-size: 12px;
+}
+
+.price__final {
+  font-weight: 800;
+}
+
+@media (hover: hover) {
+  .price__items ul li:hover {
+    background-color: var(--accent-button-color);
+  }
+}

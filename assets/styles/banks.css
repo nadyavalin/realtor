@@ -1,0 +1,8 @@
+.banks {
+  display: flex;
+  gap: 10px;
+}
+
+.bank img {
+  width: 100px;
+}

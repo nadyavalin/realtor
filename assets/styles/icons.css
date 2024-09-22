@@ -2,12 +2,13 @@
   display: flex;
   justify-content: flex-end;
   height: 50px;
-  margin: 40px;
+  margin: 20px 0;
 }
 
 .icons__social ul {
   display: flex;
   gap: 20px;
+  height: 50px;
 }
 
 .icon {
