@@ -1,0 +1,100 @@
+body {
+  --bg-color: rgb(255, 255, 249, 0.9);
+  --main-color: #2a2a2a;
+  --white-color: #ffffff;
+  --accent-color: #00baa4;
+  --accent-button-color: #b4dad6;
+  --gradient: linear-gradient(rgba(136, 135, 135, 0.2), rgba(255, 255, 255, 0));
+
+  color: var(--main-color);
+  background-color: var(--bg-color);
+  background-image: url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient);
+  pointer-events: none;
+  z-index: -1;
+}
+
+a {
+  font-size: 16px;
+  color: var(--main-color);
+  transition: color 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+}
+
+a.button {
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--accent-color);
+  }
+
+  a.button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}

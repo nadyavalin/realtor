@@ -1,0 +1,82 @@
+.header {
+  background-color: var(--bg-color);
+  width: 100%;
+  display: flex;
+  position: sticky;
+  height: 100px;
+  top: -5px;
+  transition: height 0.5s ease-in-out;
+}
+
+.header.shrink {
+  height: 70px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 50px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 60px;
+}
+
+.nav ul li a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 1px;
+  background-color: var(--main-color);
+  transition: width 0.5s;
+}
+
+.nav ul li a:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: width 0.5s;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.name p,
+.phone p {
+  color: var(--accent-color);
+}
+
+.link__phone {
+  color: var(--main-color);
+}
+
+@media only screen and (max-width: 960px) {
+  .nav ul {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .nav ul {
+    gap: 20px;
+  }
+}

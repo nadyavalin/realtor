@@ -1,0 +1,5 @@
+.steps {
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 500px;
+}
