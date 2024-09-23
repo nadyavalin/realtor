@@ -1,8 +1,32 @@
 .banks {
   display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+
+.bank {
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0;
+  width: 1px;
+  transition: opacity 1s ease-in-out, width 1s ease-in-out, transform 1s ease-in-out, border 1s ease-in-out;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+.bank.animate {
+  opacity: 1;
+  width: 120px;
+  border: 1px solid var(--accent-color);
+  transform: translate(0, 0);
 }
 
 .bank img {
   width: 100px;
+}
+
+.banks div ul {
+  display: flex;
+  justify-content: space-between;
 }
