@@ -7,3 +7,15 @@ main {
 section {
   padding: 0 80px;
 }
+
+@media only screen and (max-width: 1100px) {
+  section {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  section {
+    padding: 0 30px;
+  }
+}

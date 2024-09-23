@@ -11,6 +11,7 @@
 }
 
 .steps ul li {
+  font-size: 16px;
   padding: 15px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -22,5 +23,29 @@
 @media (hover: hover) {
   .steps ul li:hover {
     background-color: var(--accent-color);
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .steps ul li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .steps ul li {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .steps ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .steps ul li {
+    width: 100px;
+    border-radius: 20px;
   }
 }
