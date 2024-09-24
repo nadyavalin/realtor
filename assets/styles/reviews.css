@@ -1,0 +1,28 @@
+.reviews div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.review {
+  width: 48%;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+}
+
+.review__name {
+  font-weight: 600;
+}
+
+.review__position {
+  font-size: 14px;
+  color: var(--accent-color);
+}
+
+@media (max-width: 470px) {
+  .review {
+    width: 100%;
+  }
+}

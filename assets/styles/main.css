@@ -2,6 +2,7 @@ main {
   height: 1000px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 section {
