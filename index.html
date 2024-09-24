@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/styles/icons.css">
   <link rel="stylesheet" href="./assets/styles/offer.css">
   <link rel="stylesheet" href="./assets/styles/steps.css">
+  <link rel="stylesheet" href="./assets/styles/examples.css">
   <link rel="stylesheet" href="./assets/styles/prices.css">
   <link rel="stylesheet" href="./assets/styles/request.css">
   <link rel="stylesheet" href="./assets/styles/banks.css">
@@ -25,15 +26,23 @@
         <a href="#">
           <h2>Дмитрий Шарук</h2>
           <p>эксперт по недвижимости</p>
+          <p class="phone__for-tablet"><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></p>
         </a>
       </section>
       <nav class="nav">
-        <ul>
+        <ul class="navbar">
           <li><a href="#">Портфолио</a></li>
           <li><a href="#">Услуги</a></li>
           <li><a href="#">Отзывы</a></li>
           <li><a href="#">О себе</a></li>
         </ul>
+      </nav>
+      <nav class="burger-menu__wrapper">
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <section class="phone">
         <h2><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></h2>
@@ -101,6 +110,7 @@
     </section>
     <section class="examples">
       <h3>Примеры работ</h3>
+      <div class="temp-block"></div>
     </section>
     <section class="price">
       <div class="price__title">
@@ -261,6 +271,7 @@
 
   </footer>
   <script src="./assets/scripts/stickyHeader.js"></script>
+  <script src="./assets/scripts/burgerMenu.js"></script>
   <script src="./assets//scripts/bankDelayAnimation.js"></script>
 </body>
 

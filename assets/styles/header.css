@@ -19,17 +19,17 @@
   width: 100%;
 }
 
-.nav ul {
+.navbar {
   display: flex;
-  gap: 60px;
+  gap: 70px;
 }
 
-.nav ul li a {
+.navbar li a {
   position: relative;
   text-decoration: none;
 }
 
-.nav ul li a:after {
+.navbar li a:after {
   content: "";
   display: block;
   position: absolute;
@@ -41,7 +41,7 @@
   transition: width 0.5s;
 }
 
-.nav ul li a:hover:after {
+.navbar li a:hover:after {
   content: "";
   width: 100%;
   display: block;
@@ -59,6 +59,10 @@
   align-items: flex-end;
 }
 
+.phone__for-tablet {
+  display: none;
+}
+
 .name p,
 .phone p {
   color: var(--accent-color);
@@ -68,14 +72,127 @@
   color: var(--main-color);
 }
 
+.burger-menu__wrapper {
+  position: relative;
+  right: -40%;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+  z-index: calc(var(--nav-menu-layer) + 1);
+}
+
+.burger-menu span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: var(--main-color);
+  z-index: calc(var(--nav-menu-layer) + 1);
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--main-color);
+  transition: all 0.3s ease 0s;
+}
+
+.burger-menu::before {
+  top: 0;
+}
+
+.burger-menu::after {
+  bottom: 0;
+}
+
+.burger-menu.active span {
+  transform: scale(0);
+}
+
+.burger-menu.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger-menu.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
 @media only screen and (max-width: 1100px) {
-  .nav ul {
+  .navbar {
     gap: 30px;
   }
 }
 
 @media only screen and (max-width: 970px) {
-  .nav ul {
+  .navbar {
     gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .phone {
+    display: none;
+  }
+
+  .phone__for-tablet {
+    display: block;
+  }
+
+  .burger-menu__wrapper {
+    right: 5%;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: var(--white-color);
+    animation: burgerAnimation 0.4s;
+    z-index: var(--nav-menu-layer);
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .navbar {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .navbar li a {
+    font-size: 18px;
+  }
+}
+
+@keyframes burgerAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

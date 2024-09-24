@@ -1,6 +1,12 @@
 .banks {
   display: flex;
   flex-direction: column;
+}
+
+.banks div ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
@@ -10,7 +16,8 @@
   padding: 20px;
   opacity: 0;
   width: 1px;
-  transition: opacity 1s ease-in-out, width 1s ease-in-out, transform 1s ease-in-out, border 1s ease-in-out;
+  transition: opacity 1s ease-in-out, width 1s ease-in-out,
+    transform 1s ease-in-out, border 1s ease-in-out;
   transform: translate(-50%, -50%);
   position: relative;
 }
@@ -29,4 +36,29 @@
 .banks div ul {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  .banks div ul {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bank {
+    padding: 10px;
+  }
+
+  .bank.animate {
+    width: 100px;
+  }
+
+  .bank img {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .banks div ul {
+    justify-content: center;
+  }
 }

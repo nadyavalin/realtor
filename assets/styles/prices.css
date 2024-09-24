@@ -48,3 +48,14 @@
     background-color: var(--accent-button-color);
   }
 }
+
+@media only screen and (max-width: 670px) {
+  .price__items ul li {
+    flex-direction: column;
+  }
+
+  .price__items ul li div,
+  .price__final {
+    text-align: center;
+  }
+}
