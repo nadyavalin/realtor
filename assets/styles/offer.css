@@ -6,6 +6,7 @@
 }
 
 .offer__img {
+  margin-bottom: -20px;
   width: 35%;
   z-index: var(--offer-img-layer);
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth
+}
+
 body {
   --bg-color: rgb(255, 255, 249, 0.9);
   --bg-color-transparent: rgb(255, 255, 249, 0.9);

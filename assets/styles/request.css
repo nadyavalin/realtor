@@ -20,6 +20,7 @@ label {
   display: block;
   font-weight: 600;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 input[type="text"],
@@ -28,13 +29,134 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
+  background-color: var(--white-color);
   border: 1px solid var(--accent-button-color);
   border-radius: 20px;
   box-sizing: border-box;
+  font-size: 16px;
+}
+
+select {
+  position: relative;
+  display: block;
+}
+
+.new-select {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid var(--accent-button-color);
+  border-radius: 20px;
+  font-size: 16px;
+  user-select: none;
+  background-color: var(--white-color);
+}
+
+.new-select::after {
+  content: "▲";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: var(--accent-color);
+}
+
+.new-select__list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border: 1px solid var(--accent-button-color);
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--white-color);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.new-select__list.show {
+  max-height: 600px;
+}
+
+.new-select__list.hide {
+  max-height: 0;
+  border: none;
+}
+
+.new-select__item {
+  padding: 10px;
+  cursor: pointer;
 }
 
 input[type="checkbox"] {
   margin-right: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  width: 0;
+  left: 50px;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox .checkmark {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  outline: 1px solid var(--accent-button-color);
+  background-color: var(--white-color);
+  transition: all 0.2s ease;
+}
+
+.checkbox:hover .checkmark {
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
+}
+
+.checkbox input[type="radio"] ~ .checkmark {
+  border-radius: 50%;
+}
+
+.checkbox .checkmark::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 50%;
+  top: 40%;
+  width: 4px;
+  height: 8px;
+  border: solid var(--white-color);
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked ~ .checkmark::after {
+  opacity: 1;
+  transition: all 0.2s ease;
 }
 
 input[type="submit"] {
@@ -46,6 +168,7 @@ input[type="submit"] {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
+  font-size: 16px;
 }
 
 textarea {
@@ -53,6 +176,11 @@ textarea {
 }
 
 .form__agreement {
+  display: flex;
+  gap: 5px;
+}
+
+.form__agreement p {
   font-size: 14px;
   font-weight: 400;
 }
@@ -60,5 +188,9 @@ textarea {
 @media (hover: hover) {
   input[type="submit"]:hover {
     background-color: var(--accent-color);
+  }
+
+  .new-select__item:hover {
+    background-color: var(--accent-button-color);
   }
 }

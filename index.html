@@ -24,33 +24,34 @@
 <body>
   <header class="header">
     <div class="header__content">
-      <section class="name">
+      <div class="name">
         <a href="#">
           <h2>Дмитрий Шарук</h2>
           <p>эксперт по недвижимости</p>
           <p class="phone__for-tablet"><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></p>
         </a>
-      </section>
+      </div>
       <nav class="nav">
         <ul class="navbar">
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">О себе</a></li>
+          <li><a href="#examples">Портфолио</a></li>
+          <li><a href="#price">Услуги</a></li>
+          <li><a href="#request">Оставить заявку</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#about">О себе</a></li>
         </ul>
       </nav>
-      <nav class="burger-menu__wrapper">
-        <div class="burger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-      <section class="phone">
+      <div class="phone">
         <h2><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></h2>
         <p>на связи 24/7</p>
-      </section>
+      </div>
     </div>
+    <nav class="burger-menu__wrapper">
+      <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   </header>
   <main class="main">
     <section class="icons__social">
@@ -110,14 +111,14 @@
         <li>Полный расчёт по услуге</li>
       </ul>
     </section>
-    <section class="examples">
+    <section class="examples" id="examples">
       <h3>Примеры работ</h3>
       <div class="temp-block"></div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
       <div class="price__title">
         <h3>Прайс-лист</h3>
-        <a href="#" class="button button_accent">Оставить заявку</a>
+        <a href="#request" class="button button_accent">Оставить заявку</a>
       </div>
       <div class="price__items">
 
@@ -195,7 +196,7 @@
       </div>
 
     </section>
-    <section class="request-form">
+    <section class="request-form" id="request">
       <h3 class="request__title">Оставить заявку</h3>
       <form>
         <div>
@@ -209,8 +210,8 @@
         </div>
 
         <div>
-          <label for="select">Тип покупки:</label>
-          <select id="select" name="select" required>
+          <label for="select">Выберите услугу:</label>
+          <select id="select" name="select" class="new-select-element" required>
             <option value="Покупка новостройки" selected>Покупка новостройки</option>
             <option value="Покупка вторичного жилья">Покупка вторичного жилья</option>
             <option value="Покупка квартиры по жилищному сертификату или субсидии">Покупка квартиры по жилищному
@@ -236,10 +237,10 @@
         </div>
 
         <div>
-          <label for="agreement" class="form__agreement">
-            <input id="agreement" type="checkbox" name="agreement" required />Даю согласие на обработку своих
-            персональных данных, соглашаюсь с политикой конфиденциальности и
-            договором оферты
+          <label for="agreement" class="form__agreement checkbox">
+            <input id="agreement" type="checkbox" name="agreement" required />
+            <span class="checkmark"></span>
+            <p>Даю согласие на обработку своих персональных данных, соглашаюсь с политикой конфиденциальности и договором оферты</p>
           </label>
         </div>
 
@@ -264,7 +265,7 @@
         </ul>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <h3>Отзывы</h3>
       <div>
         <div class="review">
@@ -324,7 +325,7 @@
             доволен.</p>
         </div>
         <div>
-          <img src="" alt="">
+          <img src="" alt="" class="about__img">
         </div>
       </div>
     </section>
@@ -334,6 +335,7 @@
   </footer>
   <script src="./assets/scripts/stickyHeader.js"></script>
   <script src="./assets/scripts/burgerMenu.js"></script>
+  <script src="./assets/scripts/customSelect.js"></script>
   <script src="./assets//scripts/bankDelayAnimation.js"></script>
 </body>
 
