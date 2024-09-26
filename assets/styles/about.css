@@ -1,6 +1,7 @@
 .about__content {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   gap: 20px;
   width: 100%;
 }
@@ -32,4 +33,22 @@
 .about__img {
   border-radius: 20px;
   border: 1px solid var(--accent-color);
+}
+
+@media only screen and (max-width: 900px) {
+  .about__content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about__text {
+    padding-left: 0;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .about__img-container {
+    text-align: center;
+    width: 100%;
+  }
 }

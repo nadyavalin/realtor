@@ -6,10 +6,12 @@
   top: 0;
   height: 100px;
   transition: height 0.5s ease-in-out;
+  z-index: var(--header-layer);
 }
 
 .header.shrink {
   height: 70px;
+  background-color: var(--accent-button-color);
 }
 
 .header__content {

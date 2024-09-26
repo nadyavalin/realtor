@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
 
   --offer-img-layer: -2;
   --nav-menu-layer: 1;
+  --header-layer: 2;
 
   color: var(--main-color);
   background-color: var(--bg-color);
