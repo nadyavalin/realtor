@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--white-color);
+  background-image: linear-gradient(
+      to top,
+      rgba(34, 35, 36, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../img/footer-fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+  padding: 20px 80px;
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer__link {
+  color: var(--white-color);
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--white-color);
+}
+
+.footer__sign {
+  text-align: center;
+}
+
+.footer__sign img {
+  width: 10%;
+}
+
+.footer__icons ul {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+}

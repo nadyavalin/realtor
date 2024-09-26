@@ -1,3 +1,35 @@
-.accent-text {
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.about__text {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 55%;
+}
+
+.about__accent-text {
   font-weight: 600;
+}
+
+.about__br {
+  border: 1px solid var(--accent-color);
+}
+
+.about__br-white {
+  border: 1px solid var(--bg-color);
+}
+
+.about__img-container {
+  width: 45%;
+}
+
+.about__img {
+  border-radius: 20px;
+  border: 1px solid var(--accent-color);
 }

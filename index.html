@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="./assets/styles/icons.css">
   <link rel="stylesheet" href="./assets/styles/offer.css">
   <link rel="stylesheet" href="./assets/styles/steps.css">
-  <link rel="stylesheet" href="./assets/styles/examples.css">
+  <link rel="stylesheet" href="./assets/styles/portfolio.css">
   <link rel="stylesheet" href="./assets/styles/prices.css">
   <link rel="stylesheet" href="./assets/styles/request.css">
   <link rel="stylesheet" href="./assets/styles/banks.css">
   <link rel="stylesheet" href="./assets/styles/reviews.css">
   <link rel="stylesheet" href="./assets/styles/about.css">
+  <link rel="stylesheet" href="./assets/styles/footer.css">
   <title>Дмитрий Шарук - Ваш риелтор</title>
 </head>
 
@@ -75,13 +76,13 @@
     </section>
     <section class="offer">
       <div class="offer__img">
-        <img src="./assets/img/sharuk.png" alt="Дмитрий Шарук" class="offer__img_slide-in">
+        <img src="./assets/img/sharuk-1.png" alt="Дмитрий Шарук" class="offer__img_slide-in">
       </div>
       <div class="offer__content">
         <h1><span>Скидка до 30%</span> при выходе на сделку в течение месяца</h1>
         <div class="offer__buttons">
-          <a href="#" class="button button_accent">Бесплатная консультация</a>
-          <a href="#" class="button">Прайс-лист</a>
+          <a href="#request" class="button button_accent">Бесплатная консультация</a>
+          <a href="#price" class="button">Прайс-лист</a>
         </div>
         <div class="offer__experience">
           <div class="experience__block">
@@ -99,7 +100,7 @@
         </div>
       </div>
     </section>
-    <section class="steps">
+    <section id="steps" class="steps">
       <h3>Этапы сделки и её сопровождение</h3>
       <ul>
         <li>Бесплатная консультация</li>
@@ -111,7 +112,7 @@
         <li>Полный расчёт по услуге</li>
       </ul>
     </section>
-    <section class="examples" id="examples">
+    <section class="portfolio" id="portfolio">
       <h3>Примеры работ</h3>
       <div class="temp-block"></div>
     </section>
@@ -240,7 +241,8 @@
           <label for="agreement" class="form__agreement checkbox">
             <input id="agreement" type="checkbox" name="agreement" required />
             <span class="checkmark"></span>
-            <p>Даю согласие на обработку своих персональных данных, соглашаюсь с политикой конфиденциальности и договором оферты</p>
+            <p>Даю согласие на обработку своих персональных данных, соглашаюсь с политикой конфиденциальности и
+              договором оферты</p>
           </label>
         </div>
 
@@ -302,36 +304,102 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <h3>О себе</h3>
-      <div>
-        <div>
-          <p class="accent-text">Я работаю агентом по недвижимости с 2013 года</p>
+      <div class="about__content">
+        <div class="about__text">
+          <div class="about__br"></div>
+          <p class="about__accent-text">Я работаю агентом по недвижимости с 2013 года</p>
           <p>Свою профессиональную деятельность я начал в крупном Агентстве Недвижимости «Бекар». Там получил большой
             опыт по работе с первичным и вторичным рынком, а затем стал развивать направление загородной недвижимости.
           </p>
           <p>Во время работы в АН «Бекар» ко мне стали обращаться знакомые для решения вопросов, связанных с
             недвижимостью. Затем они стали советовать меня своим знакомым. Так появилась своя клиентская база и я решил
             покинуть агентство недвижимости и стал работать на себя.</p>
-          <br>
-          <p class="accent-text">Я очень скрупулёзный и внимательный к деталям человек. Так что 99% сделок проходят на
+          <div class="about__br"></div>
+          <p class="about__accent-text">Я очень скрупулёзный и внимательный к деталям человек. Так что 99% сделок
+            проходят на
             5+</p>
           <p>Я не делю своих клиентов по какому-то принципу. Они все для меня одинаково важны! Я одинаково ответственно
             подхожу к решению вопросов по покупке / продаже комнаты в коммунальной квартире за 1,5 млн. руб., так и
             приобретению /продаже пентхауса за 30 млн. руб.</p>
+        </div>
+        <div class="about__text">
+          <div class="about__br-white"></div>
           <p>Были интересные сделки, когда приходилось взаимодействовать с Консульствами других стран, например в
             Австралии.</p>
           <p>Однажды лично ездил за архивными документами своих клиентов в Таллин. В общем и работа интересная и клиент
             доволен.</p>
+          <div class="about__br"></div>
+          <p class="about__accent-text">Любому человеку важен результат. Я работаю на результат</p>
+          <p>Иногда в процессе работы с клиентом может абсолютно поменяться вектор запроса. Например, мы можем сначала
+            искать квартиру, а потом клиент решает купить загородный дом. Клиенты переживают, стараюсь ко всем найти
+            подход, успокоить и качественно провести сделку.</p>
+          <p>Приятно получать благодарные отзывы. Также оценкой своей работы считаю то, что потом меня, как
+            специалиста,
+            начинают советовать своим знакомым.</p>
+          <div class="about__br"></div>
         </div>
-        <div>
-          <img src="" alt="" class="about__img">
+        <div class="about__img-container">
+          <img src="./assets/img/sharuk-2.jpg" alt="Дмитрий Шарук" class="about__img offer__img_slide-in">
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" class="footer__link">Главная</a></li>
+        <li><a href="#steps" class="footer__link">Этапы</a></li>
+        <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
+        <li><a href="#price" class="footer__link">Прайс-лист</a></li>
+        <li><a href="#request" class="footer__link">Оставить заявку</a></li>
+        <li><a href="#banks" class="footer__link">Банки-партнеры</a></li>
+        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+        <li><a href="#about" class="footer__link">О себе</a></li>
+      </ul>
+    </nav>
+    <div class="footer__info">
+      <div>
+        <p>ИП Шарук</p>
+        <p>ИНН 781302098604</p>
+        <p>ОГРНИП 318784700237380</p>
+      </div>
+      <div>
+        <p>Эксперт по недвижимости - ваш личный риэлтор</p>
+      </div>
+      <div class="phone">
+        <h2><a href="tel:+79679673197" class="footer__link link__phone">+7 (967) 967-31-97</a></h2>
+        <p>на связи 24/7</p>
+      </div>
+    </div>
+    <div class="footer__sign">
+      <img src="./assets/svg/sign.svg" alt="Подпись">
+    </div>
 
+    <div class="footer__info">
+      <a href="#" class="footer__link">политика конфиденциальности</a>
+      <a href="#" class="footer__link">договор оферты</a>
+      <div class="footer__icons">
+        <ul>
+          <li class="icon">
+            <a href="https://api.whatsapp.com/send/?phone=79679673197" target="_blank">
+              <img src="assets/svg/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </li>
+          <li class="icon">
+            <a href="tg://resolve?domain=sharukd" target="_blank">
+              <img src="assets/svg/telegram.svg" alt="Telegram">
+            </a>
+          </li>
+          <li class="icon">
+            <a href="viber://add?number=79679673197">
+              <img src="assets/svg/viber.svg" alt="Viber">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="./assets/scripts/stickyHeader.js"></script>
   <script src="./assets/scripts/burgerMenu.js"></script>
