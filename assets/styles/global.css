@@ -73,7 +73,9 @@ a.button {
   padding: 10px;
   border: 1px solid var(--accent-color);
   border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition:
+    background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out;
 }
 
 @media (hover: hover) {

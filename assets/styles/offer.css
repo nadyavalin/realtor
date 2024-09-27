@@ -115,7 +115,7 @@
   .offer__buttons {
     gap: 10px;
   }
-  
+
   .offer__experience {
     gap: 10px;
   }
@@ -134,12 +134,11 @@
   .offer__buttons {
     gap: 5px;
   }
-  
+
   .offer__experience {
     gap: 5px;
   }
 }
-
 
 @keyframes slide-in {
   0% {

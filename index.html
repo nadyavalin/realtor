@@ -1,423 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/icons.css" />
+    <link rel="stylesheet" href="./assets/styles/offer.css" />
+    <link rel="stylesheet" href="./assets/styles/steps.css" />
+    <link rel="stylesheet" href="./assets/styles/portfolio.css" />
+    <link rel="stylesheet" href="./assets/styles/prices.css" />
+    <link rel="stylesheet" href="./assets/styles/request.css" />
+    <link rel="stylesheet" href="./assets/styles/banks.css" />
+    <link rel="stylesheet" href="./assets/styles/reviews.css" />
+    <link rel="stylesheet" href="./assets/styles/about.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <title>Дмитрий Шарук - Ваш риелтор</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/favicon.ico">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/header.css">
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <link rel="stylesheet" href="./assets/styles/icons.css">
-  <link rel="stylesheet" href="./assets/styles/offer.css">
-  <link rel="stylesheet" href="./assets/styles/steps.css">
-  <link rel="stylesheet" href="./assets/styles/portfolio.css">
-  <link rel="stylesheet" href="./assets/styles/prices.css">
-  <link rel="stylesheet" href="./assets/styles/request.css">
-  <link rel="stylesheet" href="./assets/styles/banks.css">
-  <link rel="stylesheet" href="./assets/styles/reviews.css">
-  <link rel="stylesheet" href="./assets/styles/about.css">
-  <link rel="stylesheet" href="./assets/styles/footer.css">
-  <title>Дмитрий Шарук - Ваш риелтор</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__content">
-      <div class="name">
-        <a href="#">
-          <h2>Дмитрий Шарук</h2>
-          <p>эксперт по недвижимости</p>
-          <p class="phone__for-tablet"><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></p>
-        </a>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="name">
+          <a href="#">
+            <h2>Дмитрий Шарук</h2>
+            <p>эксперт по недвижимости</p>
+            <p class="phone__for-tablet">
+              <a href="tel:+79679673197" class="link__phone"
+                >+7 (967) 967-31-97</a
+              >
+            </p>
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="navbar">
+            <li>
+              <a
+                href="#portfolio"
+                onclick="scrollToElement('#portfolio'); return false;"
+                >Портфолио</a
+              >
+            </li>
+            <li>
+              <a
+                href="#price"
+                onclick="scrollToElement('#price'); return false;"
+                >Услуги</a
+              >
+            </li>
+            <li>
+              <a
+                href="#request"
+                onclick="scrollToElement('#request'); return false;"
+                >Оставить заявку</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reviews"
+                onclick="scrollToElement('#reviews'); return false;"
+                >Отзывы</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                onclick="scrollToElement('#about'); return false;"
+                >О себе</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="phone">
+          <h2>
+            <a href="tel:+79679673197" class="link__phone"
+              >+7 (967) 967-31-97</a
+            >
+          </h2>
+          <p>на связи 24/7</p>
+        </div>
       </div>
-      <nav class="nav">
-        <ul class="navbar">
-          <li><a href="#portfolio" onclick="scrollToElement('#portfolio'); return false;">Портфолио</a></li>
-          <li><a href="#price" onclick="scrollToElement('#price'); return false;">Услуги</a></li>
-          <li><a href="#request" onclick="scrollToElement('#request'); return false;">Оставить заявку</a></li>
-          <li><a href="#reviews" onclick="scrollToElement('#reviews'); return false;">Отзывы</a></li>
-          <li><a href="#about" onclick="scrollToElement('#about'); return false;">О себе</a></li>
-        </ul>
+      <nav class="burger-menu__wrapper">
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
-      <div class="phone">
-        <h2><a href="tel:+79679673197" class="link__phone">+7 (967) 967-31-97</a></h2>
-        <p>на связи 24/7</p>
-      </div>
-    </div>
-    <nav class="burger-menu__wrapper">
-      <div class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-  <main class="main">
-    <section class="icons__social">
-      <ul>
-        <li class="icon">
-          <a href="https://api.whatsapp.com/send/?phone=79679673197" target="_blank">
-            <img src="assets/svg/whatsapp.svg" alt="WhatsApp">
-          </a>
-        </li>
-        <li class="icon">
-          <a href="tg://resolve?domain=sharukd" target="_blank">
-            <img src="assets/svg/telegram.svg" alt="Telegram">
-          </a>
-        </li>
-        <li class="icon">
-          <a href="viber://add?number=79679673197">
-            <img src="assets/svg/viber.svg" alt="Viber">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="offer">
-      <div class="offer__img">
-        <img src="./assets/img/sharuk-1.png" alt="Дмитрий Шарук" class="offer__img_slide-in">
-      </div>
-      <div class="offer__content">
-        <h1><span>Скидка до 30%</span> при выходе на сделку в течение месяца</h1>
-        <div class="offer__buttons">
-          <a href="#request" class="button button_accent"
-            onclick="scrollToElement('#request'); return false;">Бесплатная консультация</a>
-          <a href="#price" class="button" onclick="scrollToElement('#price'); return false;">Прайс-лист</a>
-        </div>
-        <div class="offer__experience">
-          <div class="experience__block">
-            <p class="experience__figure">100+</p>
-            <p>проданных квартир</p>
-          </div>
-          <div class="experience__block">
-            <p class="experience__figure">12+</p>
-            <p>лет опыта</p>
-          </div>
-          <div class="experience__block">
-            <p class="experience__figure">10+</p>
-            <p>банков-партнеров</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="steps" class="steps">
-      <h3>Этапы сделки и её сопровождение</h3>
-      <ul>
-        <li>Бесплатная консультация</li>
-        <li>Анализ и оценка</li>
-        <li>Поиск объекта или клиента</li>
-        <li>Юридическая проверка</li>
-        <li>Заключение договора</li>
-        <li>Безопасные расчёты</li>
-        <li>Полный расчёт по услуге</li>
-      </ul>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <h3>Примеры работ</h3>
-      <div class="temp-block"></div>
-    </section>
-    <section class="price" id="price">
-      <div class="price__title">
-        <h3>Прайс-лист</h3>
-        <a href="#request" class="button button_accent" onclick="scrollToElement('#request'); return false;">Оставить заявку</a>
-      </div>
-      <div class="price__items">
-
-        <div class="price__item">
-          <h4>Покупка</h4>
-          <ul>
-            <li>
-              <p>Стоимость услуги при покупке новостройки</p>
-              <div>
-                <p class="price__interest">от 0 до 1 %</p>
-                <p class="price__note">при покупке объекта у застройщика партнера</p>
-              </div>
-            </li>
-            <li>
-              <p>Стоимость услуги при покупке вторичного жилья</p>
-              <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Покупка квартиры по жилищному сертификату или субсидии</p>
-              <p class="price__interest">не более 3% от 150 000 Ꝑ</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="price__item">
-          <h4>Продажа</h4>
-          <ul>
-            <li>
-              <p>Стоимость услуги при продаже объекта</p>
-              <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Стоимость услуги при срочной продаже</p>
-              <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="price__item">
-          <h4>Другие ситуации</h4>
-          <ul>
-            <li>
-              <p>Альтернативная сделка, обмен квартир</p>
-              <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Международные сделки: покупка / продажа объектов заграницей</p>
-              <p class="price__interest">от 150 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Управление объектами, сдача в найм, ведение объекта</p>
-              <p class="price__interest">от 50 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Расселение коммунальных квартир</p>
-              <p class="price__interest">от 5% от 200 000 Ꝑ</p>
-            </li>
-            <li>
-              <p>Сдача в аренду, поиск объекта в аренду</p>
-              <p class="price__interest">от 50% от суммы арендного платежа</p>
-            </li>
-            <li>
-              <p>Сопровождение сделок с недвижимостью</p>
-              <div>
-                <p class="price__interest">от 50 000 Ꝑ</p>
-                <p class="price__note">контроль безопасности сделки и юридической чистоты</p>
-              </div>
-            </li>
-            <li>
-              <p class="price__final">Все цены указаны ориентировочно, конечная стоимость услуги обсуждается
-                индивидуально</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </section>
-    <section class="request-form" id="request">
-      <h3 class="request__title">Оставить заявку</h3>
-      <form>
-        <div>
-          <label for="name">Имя:</label>
-          <input id="name" type="text" name="name" required />
-        </div>
-
-        <div>
-          <label for="phone">Телефон:</label>
-          <input id="phone" type="tel" name="phone" required />
-        </div>
-
-        <div>
-          <label for="select">Выберите услугу:</label>
-          <select id="select" name="select" class="new-select-element" required>
-            <option value="Покупка новостройки" selected>Покупка новостройки</option>
-            <option value="Покупка вторичного жилья">Покупка вторичного жилья</option>
-            <option value="Покупка квартиры по жилищному сертификату или субсидии">Покупка квартиры по жилищному
-              сертификату или субсидии</option>
-            <option value="Продажа объекта">Продажа объекта</option>
-            <option value="Срочная продажа">Срочная продажа</option>
-            <option value="Альтернативная сделка, обмен квартир">Альтернативная сделка, обмен квартир</option>
-            <option value="Покупка объекта заграницей">Покупка объекта заграницей</option>
-            <option value="Продажа объекта заграницей">Продажа объекта заграницей</option>
-            <option value="Управление объектами, сдача в найм, ведение объекта">Управление объектами, сдача в найм,
-              ведение объекта</option>
-            <option value="Расселение коммунальных квартир">Расселение коммунальных квартир</option>
-            <option value="Сдача в аренду">Сдача в аренду</option>
-            <option value="Поиск объекта в аренду">Поиск объекта в аренду</option>
-            <option value="Сопровождение сделок с недвижимостью">Сопровождение сделок с недвижимостью</option>
-            <option value="Другое...">Другое...</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="situation">Описать ситуацию:</label>
-          <textarea id="situation" name="situation" rows="7" required></textarea>
-        </div>
-
-        <div>
-          <label for="agreement" class="form__agreement checkbox">
-            <input id="agreement" type="checkbox" name="agreement" required />
-            <span class="checkmark"></span>
-            <p>Даю согласие на обработку своих персональных данных, соглашаюсь с политикой конфиденциальности и
-              договором оферты</p>
-          </label>
-        </div>
-
-        <div>
-          <input type="submit" value="Отправить" />
-        </div>
-      </form>
-    </section>
-    <section class="banks" id="banks">
-      <h3>Ведущие банки-партнеры</h3>
-      <div>
-        <ul>
-          <li class="bank"><img src="./assets/img/banks/sber.png" alt="Сбер"></li>
-          <li class="bank"><img src="./assets/img/banks/vtb.png" alt="ВТБ"></li>
-          <li class="bank"><img src="./assets/img/banks/raif.png" alt="Райффайзен Банк"></li>
-          <li class="bank"><img src="./assets/img/banks/domrf.png" alt="Дом РФ"></li>
-          <li class="bank"><img src="./assets/img/banks/gazprombank.jpeg" alt="Газпромбанк"></li>
-          <li class="bank"><img src="./assets/img/banks/spb.jpg" alt="Банк Санкт-Петербург"></li>
-          <li class="bank"><img src="./assets/img/banks/alfa-bank.jpg" alt="Альфа-банк"></li>
-          <li class="bank"><img src="./assets/img/banks/psb.jpg" alt="Промсвязьбанк"></li>
-          <li class="bank"><img src="./assets/img/banks/rshb.png" alt="Россельхозбанк"></li>
-        </ul>
-      </div>
-    </section>
-    <section class="reviews" id="reviews">
-      <h3>Отзывы</h3>
-      <div>
-        <div class="review">
-          <p class="review__name">Владимир</p>
-          <p class="review__position">Клиент</p>
-          <p>Выражаю огромную признательность Дмитрию за профессионализм, внимательность, серьезный подход к своему
-            делу! Буду в дальнейшем пользоваться его услугами и рекомендовать другим.</p>
-        </div>
-
-        <div class="review">
-          <p class="review__name">Кристина</p>
-          <p class="review__position">Клиент</p>
-          <p>Хочу выразить огромную благодарность за проделанную работу. Очень приятно осознавать, что есть такие
-            ответственные и исполнительные люди. Вы оказали мне огромную помощь, добросовестно трудились, вкладывая в
-            дело не только руки, но и душу.</p>
-        </div>
-
-        <div class="review">
-          <p class="review__name">Марина</p>
-          <p class="review__position">Клиент</p>
-          <p>Дмитрий не просто отличный специалист своего дела и первоклассный работник, но и просто хороший человек.
-            Спасибо.</p>
-          <p>Для проведения этой сделки Дмитрий приложил максимум усилий и я довольна его работой. Такой поддержкой надо
-            дорожить и я всем своим знакомым рекомендую услуги Дмитрия.</p>
-        </div>
-
-        <div class="review">
-          <p class="review__name">Карина</p>
-          <p class="review__position">Клиент</p>
-          <p>Спасибо вам огромное за чёткую работу! Нашли квартиру очень быстро, помогли по документации и всегда
-            поддерживали! Спасибо вам!</p>
-          <p>С оформлением справились очень быстро, сделку провели корректно. Остались самые лучшие впечатления от
-            общения.</p>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <h3>О себе</h3>
-      <div class="about__content">
-        <div class="about__text">
-          <div class="about__br"></div>
-          <p class="about__accent-text">Я работаю агентом по недвижимости с 2013 года</p>
-          <p>Свою профессиональную деятельность я начал в крупном Агентстве Недвижимости «Бекар». Там получил большой
-            опыт по работе с первичным и вторичным рынком, а затем стал развивать направление загородной недвижимости.
-          </p>
-          <p>Во время работы в АН «Бекар» ко мне стали обращаться знакомые для решения вопросов, связанных с
-            недвижимостью. Затем они стали советовать меня своим знакомым. Так появилась своя клиентская база и я решил
-            покинуть агентство недвижимости и стал работать на себя.</p>
-          <div class="about__br"></div>
-          <p class="about__accent-text">Я очень скрупулёзный и внимательный к деталям человек. Так что 99% сделок
-            проходят на
-            5+</p>
-          <p>Я не делю своих клиентов по какому-то принципу. Они все для меня одинаково важны! Я одинаково ответственно
-            подхожу к решению вопросов по покупке / продаже комнаты в коммунальной квартире за 1,5 млн. руб., так и
-            приобретению /продаже пентхауса за 30 млн. руб.</p>
-        </div>
-        <div class="about__text">
-          <div class="about__br-white"></div>
-          <p>Были интересные сделки, когда приходилось взаимодействовать с Консульствами других стран, например в
-            Австралии.</p>
-          <p>Однажды лично ездил за архивными документами своих клиентов в Таллин. В общем и работа интересная и клиент
-            доволен.</p>
-          <div class="about__br"></div>
-          <p class="about__accent-text">Любому человеку важен результат. Я работаю на результат</p>
-          <p>Иногда в процессе работы с клиентом может абсолютно поменяться вектор запроса. Например, мы можем сначала
-            искать квартиру, а потом клиент решает купить загородный дом. Клиенты переживают, стараюсь ко всем найти
-            подход, успокоить и качественно провести сделку.</p>
-          <p>Приятно получать благодарные отзывы. Также оценкой своей работы считаю то, что потом меня, как
-            специалиста,
-            начинают советовать своим знакомым.</p>
-          <div class="about__br"></div>
-        </div>
-        <div class="about__img-container">
-          <img src="./assets/img/sharuk-2.jpg" alt="Дмитрий Шарук" class="about__img offer__img_slide-in">
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#" class="footer__link">Главная</a></li>
-        <li><a href="#steps" class="footer__link" onclick="scrollToElement('#steps'); return false;">Этапы</a></li>
-        <li><a href="#portfolio" class="footer__link" onclick="scrollToElement('#portfolio'); return false;">Портфолио</a></li>
-        <li><a href="#price" class="footer__link" onclick="scrollToElement('#price'); return false;">Прайс-лист</a></li>
-        <li><a href="#request" class="footer__link" onclick="scrollToElement('#request'); return false;">Оставить заявку</a></li>
-        <li><a href="#banks" class="footer__link" onclick="scrollToElement('#banks'); return false;">Банки-партнеры</a></li>
-        <li><a href="#reviews" class="footer__link" onclick="scrollToElement('#reviews'); return false;">Отзывы</a></li>
-        <li><a href="#about" class="footer__link" onclick="scrollToElement('#about'); return false;">О себе</a></li>
-      </ul>
-    </nav>
-    <div class="footer__info">
-      <div>
-        <p>ИП Шарук</p>
-        <p>ИНН 781302098604</p>
-        <p>ОГРНИП 318784700237380</p>
-      </div>
-      <div>
-        <p>Эксперт по недвижимости - ваш личный риэлтор</p>
-      </div>
-      <div class="phone">
-        <h2><a href="tel:+79679673197" class="footer__link link__phone">+7 (967) 967-31-97</a></h2>
-        <p>на связи 24/7</p>
-      </div>
-    </div>
-    <div class="footer__sign">
-      <img src="./assets/svg/sign.svg" alt="Подпись">
-    </div>
-
-    <div class="footer__info">
-      <a href="#" class="footer__link">политика конфиденциальности</a>
-      <a href="#" class="footer__link">договор оферты</a>
-      <div class="footer__icons">
+    </header>
+    <main class="main">
+      <section class="icons__social">
         <ul>
           <li class="icon">
-            <a href="https://api.whatsapp.com/send/?phone=79679673197" target="_blank">
-              <img src="assets/svg/whatsapp.svg" alt="WhatsApp">
+            <a
+              href="https://api.whatsapp.com/send/?phone=79679673197"
+              target="_blank"
+            >
+              <img src="assets/svg/whatsapp.svg" alt="WhatsApp" />
             </a>
           </li>
           <li class="icon">
             <a href="tg://resolve?domain=sharukd" target="_blank">
-              <img src="assets/svg/telegram.svg" alt="Telegram">
+              <img src="assets/svg/telegram.svg" alt="Telegram" />
             </a>
           </li>
           <li class="icon">
             <a href="viber://add?number=79679673197">
-              <img src="assets/svg/viber.svg" alt="Viber">
+              <img src="assets/svg/viber.svg" alt="Viber" />
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </footer>
-  <section class="developer">
-    <div>
-      <p>дизайн и верстка</p>
-      <div class="developer__telegram-container">
-        <a href="tg://resolve?domain=tkachuk_87" target="_blank">
-          <img src="assets/svg/telegram.svg" alt="Telegram">
-        </a>
-      </div>
-      <a href="tg://resolve?domain=tkachuk_87" target="_blank" class="footer__link">Надежда Ткачук</a>
-    </div>
-  </section>
-  <script src="./assets/scripts/stickyHeader.js"></script>
-  <script src="./assets/scripts/burgerMenu.js"></script>
-  <script src="./assets/scripts/scrollTo.js"></script>
-  <script src="./assets/scripts/customSelect.js"></script>
-  <script src="./assets//scripts/bankDelayAnimation.js"></script>
-</body>
+      </section>
+      <section class="offer">
+        <div class="offer__img">
+          <img
+            src="./assets/img/sharuk-1.png"
+            alt="Дмитрий Шарук"
+            class="offer__img_slide-in"
+          />
+        </div>
+        <div class="offer__content">
+          <h1>
+            <span>Скидка до 30%</span> при выходе на сделку в течение месяца
+          </h1>
+          <div class="offer__buttons">
+            <a
+              href="#request"
+              class="button button_accent"
+              onclick="scrollToElement('#request'); return false;"
+              >Бесплатная консультация</a
+            >
+            <a
+              href="#price"
+              class="button"
+              onclick="scrollToElement('#price'); return false;"
+              >Прайс-лист</a
+            >
+          </div>
+          <div class="offer__experience">
+            <div class="experience__block">
+              <p class="experience__figure">100+</p>
+              <p>проданных квартир</p>
+            </div>
+            <div class="experience__block">
+              <p class="experience__figure">12+</p>
+              <p>лет опыта</p>
+            </div>
+            <div class="experience__block">
+              <p class="experience__figure">10+</p>
+              <p>банков-партнеров</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="steps" class="steps">
+        <h3>Этапы сделки и её сопровождение</h3>
+        <ul>
+          <li>Бесплатная консультация</li>
+          <li>Анализ и оценка</li>
+          <li>Поиск объекта или клиента</li>
+          <li>Юридическая проверка</li>
+          <li>Заключение договора</li>
+          <li>Безопасные расчёты</li>
+          <li>Полный расчёт по услуге</li>
+        </ul>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h3>Примеры работ</h3>
+        <div class="temp-block"></div>
+      </section>
+      <section class="price" id="price">
+        <div class="price__title">
+          <h3>Прайс-лист</h3>
+          <a
+            href="#request"
+            class="button button_accent"
+            onclick="scrollToElement('#request'); return false;"
+            >Оставить заявку</a
+          >
+        </div>
+        <div class="price__items">
+          <div class="price__item">
+            <h4>Покупка</h4>
+            <ul>
+              <li>
+                <p>Стоимость услуги при покупке новостройки</p>
+                <div>
+                  <p class="price__interest">от 0 до 1 %</p>
+                  <p class="price__note">
+                    при покупке объекта у застройщика партнера
+                  </p>
+                </div>
+              </li>
+              <li>
+                <p>Стоимость услуги при покупке вторичного жилья</p>
+                <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>Покупка квартиры по жилищному сертификату или субсидии</p>
+                <p class="price__interest">не более 3% от 150 000 Ꝑ</p>
+              </li>
+            </ul>
+          </div>
 
+          <div class="price__item">
+            <h4>Продажа</h4>
+            <ul>
+              <li>
+                <p>Стоимость услуги при продаже объекта</p>
+                <p class="price__interest">не более 2% от 100 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>Стоимость услуги при срочной продаже</p>
+                <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="price__item">
+            <h4>Другие ситуации</h4>
+            <ul>
+              <li>
+                <p>Альтернативная сделка, обмен квартир</p>
+                <p class="price__interest">от 2 до 4 % от 150 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>
+                  Международные сделки: покупка / продажа объектов заграницей
+                </p>
+                <p class="price__interest">от 150 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>Управление объектами, сдача в найм, ведение объекта</p>
+                <p class="price__interest">от 50 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>Расселение коммунальных квартир</p>
+                <p class="price__interest">от 5% от 200 000 Ꝑ</p>
+              </li>
+              <li>
+                <p>Сдача в аренду, поиск объекта в аренду</p>
+                <p class="price__interest">от 50% от суммы арендного платежа</p>
+              </li>
+              <li>
+                <p>Сопровождение сделок с недвижимостью</p>
+                <div>
+                  <p class="price__interest">от 50 000 Ꝑ</p>
+                  <p class="price__note">
+                    контроль безопасности сделки и юридической чистоты
+                  </p>
+                </div>
+              </li>
+              <li>
+                <p class="price__final">
+                  Все цены указаны ориентировочно, конечная стоимость услуги
+                  обсуждается индивидуально
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="request-form" id="request">
+        <h3 class="request__title">Оставить заявку</h3>
+        <form>
+          <div>
+            <label for="name">Имя:</label>
+            <input id="name" type="text" name="name" required />
+          </div>
+
+          <div>
+            <label for="phone">Телефон:</label>
+            <input id="phone" type="tel" name="phone" required />
+          </div>
+
+          <div>
+            <label for="select">Выберите услугу:</label>
+            <select
+              id="select"
+              name="select"
+              class="new-select-element"
+              required
+            >
+              <option value="Покупка новостройки" selected>
+                Покупка новостройки
+              </option>
+              <option value="Покупка вторичного жилья">
+                Покупка вторичного жилья
+              </option>
+              <option
+                value="Покупка квартиры по жилищному сертификату или субсидии"
+              >
+                Покупка квартиры по жилищному сертификату или субсидии
+              </option>
+              <option value="Продажа объекта">Продажа объекта</option>
+              <option value="Срочная продажа">Срочная продажа</option>
+              <option value="Альтернативная сделка, обмен квартир">
+                Альтернативная сделка, обмен квартир
+              </option>
+              <option value="Покупка объекта заграницей">
+                Покупка объекта заграницей
+              </option>
+              <option value="Продажа объекта заграницей">
+                Продажа объекта заграницей
+              </option>
+              <option
+                value="Управление объектами, сдача в найм, ведение объекта"
+              >
+                Управление объектами, сдача в найм, ведение объекта
+              </option>
+              <option value="Расселение коммунальных квартир">
+                Расселение коммунальных квартир
+              </option>
+              <option value="Сдача в аренду">Сдача в аренду</option>
+              <option value="Поиск объекта в аренду">
+                Поиск объекта в аренду
+              </option>
+              <option value="Сопровождение сделок с недвижимостью">
+                Сопровождение сделок с недвижимостью
+              </option>
+              <option value="Другое...">Другое...</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="situation">Описать ситуацию:</label>
+            <textarea
+              id="situation"
+              name="situation"
+              rows="7"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="agreement" class="form__agreement checkbox">
+              <input id="agreement" type="checkbox" name="agreement" required />
+              <span class="checkmark"></span>
+              <p>
+                Даю согласие на обработку своих персональных данных, соглашаюсь
+                с политикой конфиденциальности и договором оферты
+              </p>
+            </label>
+          </div>
+
+          <div>
+            <input type="submit" value="Отправить" />
+          </div>
+        </form>
+      </section>
+      <section class="banks" id="banks">
+        <h3>Ведущие банки-партнеры</h3>
+        <div>
+          <ul>
+            <li class="bank">
+              <img src="./assets/img/banks/sber.png" alt="Сбер" />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/vtb.png" alt="ВТБ" />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/raif.png" alt="Райффайзен Банк" />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/domrf.png" alt="Дом РФ" />
+            </li>
+            <li class="bank">
+              <img
+                src="./assets/img/banks/gazprombank.jpeg"
+                alt="Газпромбанк"
+              />
+            </li>
+            <li class="bank">
+              <img
+                src="./assets/img/banks/spb.jpg"
+                alt="Банк Санкт-Петербург"
+              />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/alfa-bank.jpg" alt="Альфа-банк" />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/psb.jpg" alt="Промсвязьбанк" />
+            </li>
+            <li class="bank">
+              <img src="./assets/img/banks/rshb.png" alt="Россельхозбанк" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <h3>Отзывы</h3>
+        <div>
+          <div class="review">
+            <p class="review__name">Владимир</p>
+            <p class="review__position">Клиент</p>
+            <p>
+              Выражаю огромную признательность Дмитрию за профессионализм,
+              внимательность, серьезный подход к своему делу! Буду в дальнейшем
+              пользоваться его услугами и рекомендовать другим.
+            </p>
+          </div>
+
+          <div class="review">
+            <p class="review__name">Кристина</p>
+            <p class="review__position">Клиент</p>
+            <p>
+              Хочу выразить огромную благодарность за проделанную работу. Очень
+              приятно осознавать, что есть такие ответственные и исполнительные
+              люди. Вы оказали мне огромную помощь, добросовестно трудились,
+              вкладывая в дело не только руки, но и душу.
+            </p>
+          </div>
+
+          <div class="review">
+            <p class="review__name">Марина</p>
+            <p class="review__position">Клиент</p>
+            <p>
+              Дмитрий не просто отличный специалист своего дела и первоклассный
+              работник, но и просто хороший человек. Спасибо.
+            </p>
+            <p>
+              Для проведения этой сделки Дмитрий приложил максимум усилий и я
+              довольна его работой. Такой поддержкой надо дорожить и я всем
+              своим знакомым рекомендую услуги Дмитрия.
+            </p>
+          </div>
+
+          <div class="review">
+            <p class="review__name">Карина</p>
+            <p class="review__position">Клиент</p>
+            <p>
+              Спасибо вам огромное за чёткую работу! Нашли квартиру очень
+              быстро, помогли по документации и всегда поддерживали! Спасибо
+              вам!
+            </p>
+            <p>
+              С оформлением справились очень быстро, сделку провели корректно.
+              Остались самые лучшие впечатления от общения.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h3>О себе</h3>
+        <div class="about__content">
+          <div class="about__text">
+            <div class="about__br"></div>
+            <p class="about__accent-text">
+              Я работаю агентом по недвижимости с 2013 года
+            </p>
+            <p>
+              Свою профессиональную деятельность я начал в крупном Агентстве
+              Недвижимости «Бекар». Там получил большой опыт по работе с
+              первичным и вторичным рынком, а затем стал развивать направление
+              загородной недвижимости.
+            </p>
+            <p>
+              Во время работы в АН «Бекар» ко мне стали обращаться знакомые для
+              решения вопросов, связанных с недвижимостью. Затем они стали
+              советовать меня своим знакомым. Так появилась своя клиентская база
+              и я решил покинуть агентство недвижимости и стал работать на себя.
+            </p>
+            <div class="about__br"></div>
+            <p class="about__accent-text">
+              Я очень скрупулёзный и внимательный к деталям человек. Так что 99%
+              сделок проходят на 5+
+            </p>
+            <p>
+              Я не делю своих клиентов по какому-то принципу. Они все для меня
+              одинаково важны! Я одинаково ответственно подхожу к решению
+              вопросов по покупке / продаже комнаты в коммунальной квартире за
+              1,5 млн. руб., так и приобретению /продаже пентхауса за 30 млн.
+              руб.
+            </p>
+          </div>
+          <div class="about__text">
+            <div class="about__br-white"></div>
+            <p>
+              Были интересные сделки, когда приходилось взаимодействовать с
+              Консульствами других стран, например в Австралии.
+            </p>
+            <p>
+              Однажды лично ездил за архивными документами своих клиентов в
+              Таллин. В общем и работа интересная и клиент доволен.
+            </p>
+            <div class="about__br"></div>
+            <p class="about__accent-text">
+              Любому человеку важен результат. Я работаю на результат
+            </p>
+            <p>
+              Иногда в процессе работы с клиентом может абсолютно поменяться
+              вектор запроса. Например, мы можем сначала искать квартиру, а
+              потом клиент решает купить загородный дом. Клиенты переживают,
+              стараюсь ко всем найти подход, успокоить и качественно провести
+              сделку.
+            </p>
+            <p>
+              Приятно получать благодарные отзывы. Также оценкой своей работы
+              считаю то, что потом меня, как специалиста, начинают советовать
+              своим знакомым.
+            </p>
+            <div class="about__br"></div>
+          </div>
+          <div class="about__img-container">
+            <img
+              src="./assets/img/sharuk-2.jpg"
+              alt="Дмитрий Шарук"
+              class="about__img offer__img_slide-in"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="footer__link">Главная</a></li>
+          <li>
+            <a
+              href="#steps"
+              class="footer__link"
+              onclick="scrollToElement('#steps'); return false;"
+              >Этапы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="footer__link"
+              onclick="scrollToElement('#portfolio'); return false;"
+              >Портфолио</a
+            >
+          </li>
+          <li>
+            <a
+              href="#price"
+              class="footer__link"
+              onclick="scrollToElement('#price'); return false;"
+              >Прайс-лист</a
+            >
+          </li>
+          <li>
+            <a
+              href="#request"
+              class="footer__link"
+              onclick="scrollToElement('#request'); return false;"
+              >Оставить заявку</a
+            >
+          </li>
+          <li>
+            <a
+              href="#banks"
+              class="footer__link"
+              onclick="scrollToElement('#banks'); return false;"
+              >Банки-партнеры</a
+            >
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              class="footer__link"
+              onclick="scrollToElement('#reviews'); return false;"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="footer__link"
+              onclick="scrollToElement('#about'); return false;"
+              >О себе</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__info">
+        <div>
+          <p>ИП Шарук</p>
+          <p>ИНН 781302098604</p>
+          <p>ОГРНИП 318784700237380</p>
+        </div>
+        <div>
+          <p>Эксперт по недвижимости - ваш личный риэлтор</p>
+        </div>
+        <div class="phone">
+          <h2>
+            <a href="tel:+79679673197" class="footer__link link__phone"
+              >+7 (967) 967-31-97</a
+            >
+          </h2>
+          <p>на связи 24/7</p>
+        </div>
+      </div>
+      <div class="footer__sign">
+        <img src="./assets/svg/sign.svg" alt="Подпись" />
+      </div>
+
+      <div class="footer__info">
+        <a href="#" class="footer__link">политика конфиденциальности</a>
+        <a href="#" class="footer__link">договор оферты</a>
+        <div class="footer__icons">
+          <ul>
+            <li class="icon">
+              <a
+                href="https://api.whatsapp.com/send/?phone=79679673197"
+                target="_blank"
+              >
+                <img src="assets/svg/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </li>
+            <li class="icon">
+              <a href="tg://resolve?domain=sharukd" target="_blank">
+                <img src="assets/svg/telegram.svg" alt="Telegram" />
+              </a>
+            </li>
+            <li class="icon">
+              <a href="viber://add?number=79679673197">
+                <img src="assets/svg/viber.svg" alt="Viber" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <section class="developer">
+      <div>
+        <p>дизайн и верстка</p>
+        <div class="developer__telegram-container">
+          <a href="tg://resolve?domain=tkachuk_87" target="_blank">
+            <img src="assets/svg/telegram.svg" alt="Telegram" />
+          </a>
+        </div>
+        <a
+          href="tg://resolve?domain=tkachuk_87"
+          target="_blank"
+          class="footer__link"
+          >Надежда Ткачук</a
+        >
+      </div>
+    </section>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>

@@ -16,8 +16,11 @@
   padding: 20px;
   opacity: 0;
   width: 1px;
-  transition: opacity 1s ease-in-out, width 1s ease-in-out,
-    transform 1s ease-in-out, border 1s ease-in-out;
+  transition:
+    opacity 1s ease-in-out,
+    width 1s ease-in-out,
+    transform 1s ease-in-out,
+    border 1s ease-in-out;
   transform: translate(-50%, -50%);
   position: relative;
 }
