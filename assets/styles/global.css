@@ -9,6 +9,7 @@ body {
   --white-color: #fffff9;
   --white-form-color: #f9f9f9;
   --accent-color: #00baa4;
+  --accent-color-red: #d42121;
   --accent-button-color: #b4dad6;
   --gradient: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 
