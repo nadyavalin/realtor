@@ -34,11 +34,11 @@
       </div>
       <nav class="nav">
         <ul class="navbar">
-          <li><a href="#examples">Портфолио</a></li>
-          <li><a href="#price">Услуги</a></li>
-          <li><a href="#request">Оставить заявку</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#about">О себе</a></li>
+          <li><a href="#portfolio" onclick="scrollToElement('#portfolio'); return false;">Портфолио</a></li>
+          <li><a href="#price" onclick="scrollToElement('#price'); return false;">Услуги</a></li>
+          <li><a href="#request" onclick="scrollToElement('#request'); return false;">Оставить заявку</a></li>
+          <li><a href="#reviews" onclick="scrollToElement('#reviews'); return false;">Отзывы</a></li>
+          <li><a href="#about" onclick="scrollToElement('#about'); return false;">О себе</a></li>
         </ul>
       </nav>
       <div class="phone">
@@ -81,8 +81,9 @@
       <div class="offer__content">
         <h1><span>Скидка до 30%</span> при выходе на сделку в течение месяца</h1>
         <div class="offer__buttons">
-          <a href="#request" class="button button_accent">Бесплатная консультация</a>
-          <a href="#price" class="button">Прайс-лист</a>
+          <a href="#request" class="button button_accent"
+            onclick="scrollToElement('#request'); return false;">Бесплатная консультация</a>
+          <a href="#price" class="button" onclick="scrollToElement('#price'); return false;">Прайс-лист</a>
         </div>
         <div class="offer__experience">
           <div class="experience__block">
@@ -119,7 +120,7 @@
     <section class="price" id="price">
       <div class="price__title">
         <h3>Прайс-лист</h3>
-        <a href="#request" class="button button_accent">Оставить заявку</a>
+        <a href="#request" class="button button_accent" onclick="scrollToElement('#request'); return false;">Оставить заявку</a>
       </div>
       <div class="price__items">
 
@@ -251,7 +252,7 @@
         </div>
       </form>
     </section>
-    <section class="banks">
+    <section class="banks" id="banks">
       <h3>Ведущие банки-партнеры</h3>
       <div>
         <ul>
@@ -350,13 +351,13 @@
     <nav class="navbar">
       <ul>
         <li><a href="#" class="footer__link">Главная</a></li>
-        <li><a href="#steps" class="footer__link">Этапы</a></li>
-        <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
-        <li><a href="#price" class="footer__link">Прайс-лист</a></li>
-        <li><a href="#request" class="footer__link">Оставить заявку</a></li>
-        <li><a href="#banks" class="footer__link">Банки-партнеры</a></li>
-        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
-        <li><a href="#about" class="footer__link">О себе</a></li>
+        <li><a href="#steps" class="footer__link" onclick="scrollToElement('#steps'); return false;">Этапы</a></li>
+        <li><a href="#portfolio" class="footer__link" onclick="scrollToElement('#portfolio'); return false;">Портфолио</a></li>
+        <li><a href="#price" class="footer__link" onclick="scrollToElement('#price'); return false;">Прайс-лист</a></li>
+        <li><a href="#request" class="footer__link" onclick="scrollToElement('#request'); return false;">Оставить заявку</a></li>
+        <li><a href="#banks" class="footer__link" onclick="scrollToElement('#banks'); return false;">Банки-партнеры</a></li>
+        <li><a href="#reviews" class="footer__link" onclick="scrollToElement('#reviews'); return false;">Отзывы</a></li>
+        <li><a href="#about" class="footer__link" onclick="scrollToElement('#about'); return false;">О себе</a></li>
       </ul>
     </nav>
     <div class="footer__info">
@@ -414,6 +415,7 @@
   </section>
   <script src="./assets/scripts/stickyHeader.js"></script>
   <script src="./assets/scripts/burgerMenu.js"></script>
+  <script src="./assets/scripts/scrollTo.js"></script>
   <script src="./assets/scripts/customSelect.js"></script>
   <script src="./assets//scripts/bankDelayAnimation.js"></script>
 </body>
