@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* Smooth scroll to blocks */
-function scrollToElement(target) {
+export function scrollToElement(target) {
   const targetElement = document.querySelector(target);
   if (targetElement) {
     const topPosition =
@@ -22,6 +22,8 @@ function scrollToElement(target) {
     history.pushState(null, "", target);
   }
 }
+
+window.scrollToElement = scrollToElement;
 
 /* Burger menu */
 const burgerMenu = document.querySelector(".burger-menu");
