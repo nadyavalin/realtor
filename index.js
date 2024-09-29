@@ -40,6 +40,22 @@ ulItem.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
 });
 
+/* Modal */
+const clickedPhotos = document.querySelectorAll(".portfolio__photo");
+const modal = document.querySelector(".modal");
+const cross = document.querySelector(".modal__cross-container");
+
+clickedPhotos.forEach((photo) => {
+  photo.addEventListener("click", () => {
+    console.log(photo);
+    modal.style.display = "flex";
+  });
+});
+
+cross.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
 /* Bank delay animation */
 const handleIntersection = (entries) => {
   entries.forEach((entry) => {

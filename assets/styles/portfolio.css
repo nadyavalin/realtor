@@ -6,7 +6,7 @@
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(5, 19.2%);
-  grid-template-rows: 50% 50%;
+  grid-template-rows: repeat(2, 50%);
   grid-template-areas:
     "a b c d e"
     "f b g g e";
@@ -17,7 +17,7 @@
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(5, 19.2%);
-  grid-template-rows: 50% 50%;
+  grid-template-rows: repeat(2, 50%);
   grid-template-areas:
     "h i j k l"
     "m i n n n";
@@ -101,7 +101,7 @@
 
 .photo-2 img,
 .photo-5 img {
-  transform: scale(3.5);
+  transform: scale(3.6);
 }
 
 .photo-3 img,
@@ -158,5 +158,86 @@
   .portfolio__photo:hover .portfolio__status,
   .portfolio__photo:hover .portfolio__address {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 32.2%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas:
+      "a b c"
+      "d b e"
+      "g g g";
+  }
+
+  .portfolio-container__for-sale {
+    grid-template-columns: repeat(3, 32.2%);
+    grid-template-rows: repeat(3, 33%);
+    grid-template-areas:
+      "h i j"
+      "m i k"
+      "n n n";
+  }
+
+  .photo-1 img,
+  .photo-4 img {
+    transform: scale(1.7);
+  }
+
+  .photo-2 img {
+    transform: scale(4.5);
+  }
+
+  .photo-5 img {
+    transform: scale(1.7);
+  }
+
+  .photo-3 img,
+  .photo-6 img {
+    transform: scale(3.7);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas:
+      "a b"
+      "c b"
+      "e f"
+      "e g";
+  }
+
+  .portfolio-container__for-sale {
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas:
+      "h i"
+      "m i"
+      "n n"
+      "k j";
+  }
+
+  .photo-5 img,
+  .photo-7 img {
+    transform: scale(2.5);
+  }
+
+  .photo-14 img {
+    transform: scale(2.5);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-container__for-sale {
+    display: flex;
+    flex-direction: column;
   }
 }

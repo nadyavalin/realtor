@@ -76,8 +76,7 @@
 }
 
 .burger-menu__wrapper {
-  position: relative;
-  right: -40%;
+  display: none;
 }
 
 .burger-menu {
@@ -138,6 +137,12 @@
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .header__content {
+    margin: 0 50px;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
   .navbar {
     gap: 20px;
@@ -148,13 +153,15 @@
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .burger-menu {
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 970px) {
   .header__content {
     margin: 0 20px;
-  }
-
-  .burger-menu {
-    display: flex;
   }
 }
 
@@ -168,6 +175,8 @@
   }
 
   .burger-menu__wrapper {
+    display: block;
+    position: relative;
     right: 20px;
   }
 

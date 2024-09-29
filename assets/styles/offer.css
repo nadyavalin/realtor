@@ -6,9 +6,11 @@
 }
 
 .offer__img {
+  position: relative;
   margin-bottom: -20px;
   width: 35%;
   z-index: var(--offer-img-layer);
+  bottom: -10px;
 }
 
 .offer__img_slide-in {
