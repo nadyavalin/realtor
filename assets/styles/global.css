@@ -6,16 +6,23 @@ body {
   --bg-color: rgb(255, 255, 249, 0.9);
   --bg-color-transparent: rgb(255, 255, 249, 0.9);
   --main-color: #2a2a2a;
+  --black-color: #000000;
   --white-color: #fffff9;
   --white-form-color: #f9f9f9;
+  --accent-darker-color-1: #009c8d;
+  --accent-darker-color-2: #25a195;
   --accent-color: #00baa4;
+  --accent-lighter-color-1: #2cd0bd;
+  --accent-lighter-color-2: #37ddcb;
+  --accent-lighter-color-3: #63ddd0;
   --accent-color-red: #d42121;
-  --accent-button-color: #b4dad6;
+  --accent-button-color: #beede8;
   --gradient: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 
   --offer-img-layer: -2;
   --nav-menu-layer: 1;
   --header-layer: 2;
+  --portfolio-text-layer: 3;
 
   color: var(--main-color);
   background-color: var(--bg-color);

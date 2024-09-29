@@ -2,6 +2,161 @@
   background-color: var(--bg-color);
 }
 
-.temp-block {
-  height: 500px;
+.portfolio-container {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(5, 19.2%);
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "a b c d e"
+    "f b g g e";
+  gap: 10px 10px;
+}
+
+.portfolio-container__for-sale {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(5, 19.2%);
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "h i j k l"
+    "m i n n n";
+  gap: 10px 10px;
+}
+
+.portfolio__photo {
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  opacity: 0.8;
+  scale: 1;
+  transition:
+    opacity 0.5s ease-in-out,
+    scale 0.5s ease-in-out,
+    border 0.5s ease-in-out;
+}
+
+.photo-1 {
+  grid-area: a;
+}
+
+.photo-2 {
+  grid-area: b;
+}
+
+.photo-3 {
+  grid-area: c;
+}
+
+.photo-4 {
+  grid-area: d;
+}
+
+.photo-5 {
+  grid-area: e;
+}
+
+.photo-6 {
+  grid-area: f;
+}
+
+.photo-7 {
+  grid-area: g;
+}
+
+.photo-8 {
+  grid-area: h;
+}
+
+.photo-9 {
+  grid-area: i;
+}
+
+.photo-10 {
+  grid-area: j;
+}
+
+.photo-11 {
+  grid-area: k;
+}
+
+.photo-12 {
+  grid-area: l;
+}
+
+.photo-13 {
+  grid-area: m;
+}
+
+.photo-14 {
+  grid-area: n;
+}
+
+.photo-1 img,
+.photo-4 img {
+  transform: scale(1.5);
+}
+
+.photo-2 img,
+.photo-5 img {
+  transform: scale(3.5);
+}
+
+.photo-3 img,
+.photo-6 img {
+  transform: scale(3);
+}
+
+.photo-8 img,
+.photo-10 img,
+.photo-11 img,
+.photo-12 img,
+.photo-13 img {
+  transform: scale(1.1);
+}
+
+.photo-9 img {
+  transform: scale(3.5);
+  position: relative;
+  bottom: -200px;
+}
+
+.photo-14 img {
+  transform: scale(1.5);
+}
+
+.portfolio__status {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.portfolio__address {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.portfolio__status,
+.portfolio__address {
+  z-index: var(--portfolio-text-layer);
+  color: var(--white-color);
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@media (hover: hover) {
+  .portfolio__photo:hover {
+    opacity: 1;
+    scale: 1.03;
+    border: none;
+  }
+
+  .portfolio__photo:hover .portfolio__status,
+  .portfolio__photo:hover .portfolio__address {
+    opacity: 0;
+  }
 }

@@ -15,8 +15,35 @@
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   height: 80px;
-  background-color: var(--accent-button-color);
   transition: background-color 0.5s ease-in-out;
+}
+
+.steps ul li:first-child {
+  background-color: var(--accent-darker-color-1);
+}
+
+.steps ul li:nth-child(2) {
+  background-color: var(--accent-darker-color-2);
+}
+
+.steps ul li:nth-child(3) {
+  background-color: var(--accent-color);
+}
+
+.steps ul li:nth-child(4) {
+  background-color: var(--accent-lighter-color-1);
+}
+
+.steps ul li:nth-child(5) {
+  background-color: var(--accent-lighter-color-2);
+}
+
+.steps ul li:nth-child(6) {
+  background-color: var(--accent-lighter-color-3);
+}
+
+.steps ul li:last-child {
+  background-color: var(--accent-button-color);
 }
 
 @media (hover: hover) {
