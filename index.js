@@ -43,11 +43,12 @@ ulItem.addEventListener("click", () => {
 /* Modal */
 const clickedPhotos = document.querySelectorAll(".portfolio__photo");
 const modal = document.querySelector(".modal");
+const modalImage = document.querySelector(".gallery__img");
 const cross = document.querySelector(".modal__cross-container");
 
 clickedPhotos.forEach((photo) => {
   photo.addEventListener("click", () => {
-    console.log(photo);
+    modalImage.src = photo.querySelector("img").src;
     modal.style.display = "flex";
   });
 });
