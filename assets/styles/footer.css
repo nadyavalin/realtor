@@ -73,6 +73,24 @@
   transition: width 0.5s ease-in-out;
 }
 
+.scroll-up {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.scroll-up.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 @media (hover: hover) {
   .developer div a img:hover {
     width: 45px;

@@ -74,7 +74,7 @@ targetElements.forEach((element) => {
   observer.observe(element);
 });
 
-/* Custom Select*/
+/* Custom Select */
 document.addEventListener("DOMContentLoaded", function () {
   const selectElements = document.querySelectorAll(".new-select-element");
 
@@ -132,5 +132,27 @@ document.addEventListener("DOMContentLoaded", function () {
         customSelectList.classList.add("hide");
       }
     });
+  });
+});
+
+/* Scroll up hiding*/
+const scrollUpBtn = document.querySelector(".scroll-up");
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    scrollUpBtn.classList.add("show");
+  } else {
+    scrollUpBtn.classList.remove("show");
+  }
+});
+
+/* Smooth scroll to top */
+scrollUpBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });
