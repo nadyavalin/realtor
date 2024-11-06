@@ -58,4 +58,8 @@
   .price__final {
     text-align: center;
   }
+
+  .price__interest_center {
+    text-align: center;
+  }
 }

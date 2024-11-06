@@ -21,6 +21,7 @@ body {
   --modal-shadow-color: rgba(0, 0, 0, 0.3);
 
   --offer-img-layer: -2;
+  --image-bg: -1;
   --nav-menu-layer: 1;
   --header-layer: 2;
   --portfolio-text-layer: 3;
@@ -108,6 +109,18 @@ a.button {
 }
 
 @media only screen and (max-width: 800px) {
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/fon.jpg);
+    opacity: 0.5;
+    z-index: var(--image-bg);
+  }
+
   a {
     font-size: 14px;
   }
@@ -125,6 +138,6 @@ a.button {
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

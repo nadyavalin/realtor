@@ -17,11 +17,11 @@ if (empty($name) || empty($phone) || empty($service) || empty($situation) || emp
 }
 
 // Формируем сообщение
-$message = "Новое сообщение:\nИмя: $name\nТелефон: $phone\nУслуга: $service\nСитуация: $situation\n Соглашение на обработку персональных данных: $agreement";
+$message = "Новое сообщение:\nИмя: $name\nТелефон: $phone\nУслуга: $service\nСитуация: $situation\nСоглашение на обработку персональных данных: $agreement";
 
 // Telegram Bot API
-$apiToken = "YOUR_TELEGRAM_BOT_API_TOKEN";
-$chatId = "YOUR_CHAT_ID";
+$apiToken = "8195096869:AAG7qrVJZfSGvWCzarUcDnIww87IwTzU37s";
+$chatId = "-4539696249";
 $url = "https://api.telegram.org/bot$apiToken/sendMessage";
 
 // Данные для отправки

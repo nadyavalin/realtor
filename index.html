@@ -145,15 +145,15 @@
           <div class="offer__experience">
             <div class="experience__block">
               <p class="experience__figure">100+</p>
-              <p>проданных квартир</p>
+              <p class="experience__text">проданных квартир</p>
             </div>
             <div class="experience__block">
               <p class="experience__figure">12+</p>
-              <p>лет опыта</p>
+              <p class="experience__text">лет опыта</p>
             </div>
             <div class="experience__block">
               <p class="experience__figure">10+</p>
-              <p>банков-партнеров</p>
+              <p class="experience__text">банков-партнеров</p>
             </div>
           </div>
         </div>
@@ -345,7 +345,9 @@
               </li>
               <li>
                 <p>Сдача в аренду, поиск объекта в аренду</p>
-                <p class="price__interest">от 50% от суммы арендного платежа</p>
+                <p class="price__interest price__interest_center">
+                  от 50% от суммы арендного платежа
+                </p>
               </li>
               <li>
                 <p>Сопровождение сделок с недвижимостью</p>
@@ -704,8 +706,20 @@
       </div>
 
       <div class="footer__info">
-        <a href="#" class="footer__link">политика конфиденциальности</a>
-        <a href="#" class="footer__link">договор оферты</a>
+        <a
+          href="https://tilda.cc/ru/privacy-generator/"
+          class="footer__link"
+          target="_blank"
+          title="Политика будет сформирована при перемещении на хостинг"
+          >политика конфиденциальности</a
+        >
+        <a
+          href="https://dogovor.ru/contracts/view/publichnaya-oferta"
+          class="footer__link"
+          target="_blank"
+          title="Договор оферты будет сформирован при перемещении на хостинг"
+          >договор оферты</a
+        >
         <div class="footer__icons">
           <ul>
             <li class="icon">
@@ -746,10 +760,6 @@
         >
       </div>
     </section>
-    <script type="module" src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/telegramform/js/telegramform.js"></script>
-
     <script>
       $(document).ready(function () {
         $("#contactForm").submit(function (event) {
@@ -769,5 +779,6 @@
         });
       });
     </script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

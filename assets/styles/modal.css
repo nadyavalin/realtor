@@ -15,9 +15,9 @@
   background-color: var(--white-color);
   padding: 15px;
   border-radius: 25px;
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
-  max-height: 600px;
+  max-height: 800px;
   height: 100%;
   box-shadow: 0 2px 10px var(--modal-shadow-color);
 }

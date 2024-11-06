@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     preloader.classList.add("preloader_active");
 
-    fetch("/telegramform/php/send-message-to-telegram.php", {
+    fetch("send-message-to-telegram.php", {
       method: "POST",
       body: formData,
     })

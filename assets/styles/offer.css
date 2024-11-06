@@ -65,6 +65,10 @@
   font-size: 30px;
 }
 
+.experience__text {
+  font-size: inherit;
+}
+
 @media (hover: hover) {
   .experience__block:hover {
     background-color: var(--accent-color);
@@ -98,13 +102,11 @@
   }
 
   .offer__content {
-    width: 80%;
-    align-items: flex-start;
+    width: 100%;
   }
 
   .offer__content h1 {
     font-size: 25px;
-    text-align: start;
   }
 }
 
@@ -131,6 +133,10 @@
 
   .experience__figure {
     font-size: 20px;
+  }
+
+  .experience__text {
+    font-size: 12px;
   }
 
   .offer__buttons {
