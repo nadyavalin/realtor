@@ -1,11 +1,24 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 section {
   padding: 0 80px;
+  margin: 20px 0;
+}
+
+.steps {
+  margin-bottom: 0;
+}
+
+.portfolio {
+  margin-top: 0;
+}
+
+.developer {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1100px) {

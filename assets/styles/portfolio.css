@@ -2,7 +2,7 @@
   background-color: var(--bg-color);
 }
 
-.portfolio-container {
+.portfolio-container__1 {
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(5, 19.2%);
@@ -13,7 +13,7 @@
   gap: 10px 10px;
 }
 
-.portfolio-container__for-sale {
+.portfolio-container__2 {
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(5, 19.2%);
@@ -21,6 +21,39 @@
   grid-template-areas:
     "h i j k l"
     "m i n n n";
+  gap: 10px 10px;
+}
+
+.portfolio-container__for-sale_1 {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(5, 19.2%);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas:
+    "o p q r s"
+    "t t u u u";
+  gap: 10px 10px;
+}
+
+.portfolio-container__for-sale_2 {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(5, 19.2%);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas:
+    "a b c d e"
+    "f g h i j";
+  gap: 10px 10px;
+}
+
+.portfolio-container__rent {
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(5, 19.2%);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas:
+    "a b c d e"
+    "f g h i i";
   gap: 10px 10px;
 }
 
@@ -38,43 +71,62 @@
     border 0.5s ease-in-out;
 }
 
-.photo-1 {
+.photo-1,
+.photo-22,
+.photo-32 {
   grid-area: a;
 }
 
-.photo-2 {
+.photo-2,
+.photo-23,
+.photo-33 {
   grid-area: b;
 }
 
-.photo-3 {
+.photo-3,
+.photo-24,
+.photo-34 {
   grid-area: c;
 }
 
-.photo-4 {
+.photo-4,
+.photo-25,
+.photo-35 {
   grid-area: d;
 }
 
-.photo-5 {
+.photo-5,
+.photo-26,
+.photo-36 {
   grid-area: e;
 }
 
-.photo-6 {
+.photo-6,
+.photo-27,
+.photo-37 {
   grid-area: f;
 }
 
-.photo-7 {
+.photo-7,
+.photo-28,
+.photo-38 {
   grid-area: g;
 }
 
-.photo-8 {
+.photo-8,
+.photo-29,
+.photo-39 {
   grid-area: h;
 }
 
-.photo-9 {
+.photo-9,
+.photo-30,
+.photo-40 {
   grid-area: i;
 }
 
-.photo-10 {
+.photo-10,
+.photo-31 {
   grid-area: j;
 }
 
@@ -92,6 +144,34 @@
 
 .photo-14 {
   grid-area: n;
+}
+
+.photo-15 {
+  grid-area: o;
+}
+
+.photo-16 {
+  grid-area: p;
+}
+
+.photo-17 {
+  grid-area: q;
+}
+
+.photo-18 {
+  grid-area: r;
+}
+
+.photo-19 {
+  grid-area: s;
+}
+
+.photo-20 {
+  grid-area: t;
+}
+
+.photo-21 {
+  grid-area: u;
 }
 
 .photo-1 img,
@@ -125,6 +205,49 @@
 
 .photo-14 img {
   transform: scale(1.5);
+}
+
+.photo-15 img,
+.photo-16 img,
+.photo-17 img,
+.photo-18 img{
+  transform: scale(3.7);
+}
+
+.photo-19 img {
+  transform: scale(3.7);
+  position: relative;
+  left: 50px;
+}
+
+.photo-21 img {
+  position: relative;
+  bottom: 100px;
+}
+
+.photo-22 img,
+.photo-23 img,
+.photo-24 img,
+.photo-25 img,
+.photo-26 img,
+.photo-27 img,
+.photo-28 img,
+.photo-29 img,
+.photo-30 img,
+.photo-31 img {
+  transform: scale(1.2);
+}
+
+.photo-35 img,
+.photo-36 img,
+.photo-37 img,
+.photo-38 img,
+.photo-39 img {
+  transform: scale(6.2);
+}
+
+.photo-40 img {
+  transform: scale(2.5);
 }
 
 .portfolio__status {

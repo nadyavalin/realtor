@@ -10,7 +10,7 @@
   margin-bottom: -20px;
   width: 35%;
   z-index: var(--offer-img-layer);
-  bottom: -10px;
+  bottom: -20px;
 }
 
 .offer__img_slide-in {
