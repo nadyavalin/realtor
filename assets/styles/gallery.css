@@ -1,0 +1,16 @@
+body {
+  width: 50%;
+  margin: 20px auto;
+  background-image: none;
+  background-color: var(--bg-color);
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
