@@ -131,9 +131,9 @@
   transform: rotate(45deg) translate(0, 50%);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
   .navbar {
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -145,7 +145,7 @@
 
 @media only screen and (max-width: 1050px) {
   .navbar {
-    gap: 20px;
+    gap: 10px;
   }
 
   .navbar li a {
@@ -153,7 +153,7 @@
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1000px) {
   .burger-menu {
     display: flex;
   }
