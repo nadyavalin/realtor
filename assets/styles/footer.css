@@ -91,6 +91,10 @@
   pointer-events: auto;
 }
 
+.footer__without-menu {
+  margin-top: 20px;
+}
+
 @media (hover: hover) {
   .developer div a img:hover {
     width: 45px;
