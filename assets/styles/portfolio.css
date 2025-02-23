@@ -24,14 +24,14 @@
 
 .portfolio-container_3 {
   grid-template-areas:
-    "a b c d e"
-    "f f g g g";
+    "a b e f g"
+    "c c e d d";
 }
 
 .portfolio-container_4 {
   grid-template-areas:
-    "a b c d e"
-    "f g h i j";
+    "a a b b c"
+    "e f f d d";
 }
 
 .portfolio-container_5 {
@@ -138,8 +138,25 @@
 .photo-10 img,
 .photo-11 img,
 .photo-12 img,
-.photo-13 img {
-  transform: scale(1.3);
+.photo-13 img,
+.photo-22 img,
+.photo-23 img,
+.photo-27 img,
+.photo-28 img {
+  transform: scale(2.4);
+}
+
+.photo-24 img,
+.photo-25 img {
+  transform: scale(1.5);
+  position: relative;
+  bottom: 200px;
+}
+
+.photo-26 img {
+  transform: scale(3.8);
+  position: relative;
+  top: 300px;
 }
 
 .photo-14 img {
@@ -196,6 +213,21 @@
 .photo-2 img,
 .photo-5 img {
   transform: scale(3.5);
+}
+
+.photo-15 img,
+.photo-16 img,
+.photo-18 img,
+.photo-19 img {
+  transform: scale(1.7);
+}
+
+.photo-17 img,
+.photo-19 img {
+  transform: scale(3);
+  position: relative;
+  top: 120px;
+  left: 120px;
 }
 
 .portfolio__status {
@@ -264,8 +296,22 @@
   .portfolio-container_2 {
     grid-template-areas:
       "a b c"
-      "d b f"
+      "d e f"
       "g g g";
+  }
+
+  .portfolio-container_3 {
+    grid-template-areas:
+      "a b c"
+      "d e f"
+      "g g f";
+  }
+
+  .portfolio-container_4 {
+    grid-template-areas:
+      "a b c"
+      "d f e"
+      "g g e";
   }
 
   .portfolio-container_5 {
@@ -304,6 +350,47 @@
     transform: scale(4.5);
   }
 
+  .photo-15 img,
+  .photo-16 img,
+  .photo-18 img {
+    transform: scale(2.2);
+  }
+
+  .photo-17 img {
+    top: 0;
+  }
+
+  .photo-19 img {
+    transform: scale(3.5);
+    position: relative;
+    top: 200px;
+  }
+  .photo-22 img,
+  .photo-23 img,
+  .photo-24 img,
+  .photo-25 img {
+    transform: scale(1.5);
+    position: relative;
+    top: 60px;
+  }
+
+  .photo-26 img {
+    transform: scale(2.8);
+    position: relative;
+    top: 200px;
+  }
+
+  .photo-27 img {
+    transform: scale(3.3);
+    position: relative;
+    top: 310px;
+  }
+
+  .photo-28 img {
+    transform: scale(1);
+    position: relative;
+  }
+
   .photo-35 img,
   .photo-36 img,
   .photo-37 img,
@@ -337,6 +424,35 @@
       "c d"
       "e e"
       "g g";
+  }
+
+  .portfolio-container_3 {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "e g";
+  }
+
+  .portfolio-container_4 {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "e g";
+  }
+
+  .photo-21 img {
+    transform: scale(1.5);
+    top: 0;
+  }
+
+  .photo-27 img {
+    transform: scale(1.2);
+    top: 0;
+  }
+  .photo-28 img {
+    transform: scale(1.2);
   }
 
   .photo-8 img,
