@@ -154,9 +154,9 @@
 }
 
 .photo-26 img {
-  transform: scale(3.8);
+  transform: scale(3.7);
   position: relative;
-  top: 300px;
+  top: 380px;
 }
 
 .photo-14 img {
@@ -164,9 +164,9 @@
 }
 
 .photo-40 img {
-  transform: scale(1.2);
+  transform: scale(1.4);
   position: relative;
-  left: 60px;
+  left: 200px;
 }
 
 .photo-7 img,

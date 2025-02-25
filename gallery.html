@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/styles/global.css" />
   <link rel="stylesheet" href="./assets/styles/gallery.css" />
   <link rel="stylesheet" href="./assets/styles/portfolio.css" />
+  <link rel="stylesheet" href="./assets/styles/modal.css" />
   <link rel="stylesheet" href="./assets/styles/icons.css" />
   <link rel="stylesheet" href="./assets/styles/main.css" />
   <link rel="stylesheet" href="./assets/styles/footer.css" />
@@ -17,8 +18,22 @@
 
 <body>
   <main class="gallery">
+    <section class="modal">
+      <div class="modal-with-cross__container">
+        <div class="modal__cross-container">
+          <img src="assets/svg/cross.svg" alt="" />
+        </div>
+        <div class="modal-content">
+          <img src="" alt="" class="gallery__img" />
+        </div>
+      </div>
+    </section>
+
     <section class="portfolio" id="portfolio">
-      <h3>Примеры работ (продано)</h3>
+      <div class="gallery__header">
+        <h3>Примеры работ (продано)</h3>
+        <a href="https://keytohome.ru/">← Вернуться на главную</a>
+      </div>
       <h4>Нахимова, 20</h4>
       <div class="portfolio-container portfolio-container_1">
         <div class="portfolio__photo photo-1">
@@ -284,6 +299,23 @@
       } else {
         scrollUpBtn.classList.remove("show");
       }
+    });
+  </script>
+  <script>
+    const clickedPhotos = document.querySelectorAll(".portfolio__photo");
+    const modal = document.querySelector(".modal");
+    const modalImage = document.querySelector(".gallery__img");
+    const cross = document.querySelector(".modal__cross-container");
+
+    clickedPhotos.forEach((photo) => {
+      photo.addEventListener("click", () => {
+        modalImage.src = photo.querySelector("img").src;
+        modal.style.display = "flex";
+      });
+    });
+
+    cross.addEventListener("click", () => {
+      modal.style.display = "none";
     });
   </script>
 </body>
